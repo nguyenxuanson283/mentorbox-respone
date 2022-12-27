@@ -3,7 +3,12 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+ul li:hover a{
+    color: #d3c6cc;
+}
+button:hover{
+    border: 1px solid #D72D77;
+}
 .container{
     width: 100%;
     margin: 0px auto;
@@ -280,7 +285,7 @@ footer li:first-child{
     font-size: 28px;
 }
 .button-menu-nav{display: none;}
-@media screen and (min-width:1281px) and (max-width:1366px) {
+@media screen and (max-width:1366px) {
     .form-the-best__content{
         font-size: 23px;
     }
@@ -291,7 +296,7 @@ footer li:first-child{
         width: 85%;
     }    
 }
-@media screen and (min-width: 1025px) and (max-width:1280px){
+@media screen and (max-width:1280px){
     .header{
         width: 100%;
     }
@@ -320,7 +325,7 @@ footer li:first-child{
         height: 330px;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (max-width:1024px){
     .background{
         height: 557px;
     }
@@ -399,7 +404,7 @@ footer li:first-child{
         width: 45%;
     }
 }
-@media screen and (min-width:681px) and (max-width:768px){
+@media screen and (max-width:768px){
     .explore-mentors_item{
         flex-wrap: wrap;
         overflow: hidden;
@@ -519,30 +524,53 @@ footer li:first-child{
         margin: auto;
         display: block;
     }
+    .explore-topic{
+        height: 471px;
+    }
+    .explore-topic_item{
+        height: 253px;
+    }
+    .explore-mentors{
+        height: 471px;
+    }
+    .explore-mentors_item{
+        height: 264px;
+    }
 }
-@media screen and (min-width:481px) and (max-width:680px) {
+@media screen and (max-width:680px) {
     .explore-topic_item{
         flex-wrap: wrap;
         overflow: hidden;
-        width: 400px;
-        height: 300px;
+        height: 369px;
         grid-column: 2 / 5;
+    }
+    .explore-topic{
+        height: 440px;
+    }
+    .explore-topic_item a{
+        width: 100%;
     }
     .explore-topic_item img{
         width: 100%;
     }
+    
     .explore-mentors_item{
         flex-wrap: wrap;
         overflow: hidden;
-        width: 400px;
-        height: 300px;
+        height: 369px;
         grid-column: 2 / 5;
+    }
+    .explore-mentors{
+        height: 440px;
+    }
+    .explore-mentors_item a{
+        width: 100%;
     }
     .explore-mentors_item img{
         width: 100%;
     }
     .front-button{
-        right: 20px;
+        right: 0px;
     }
     .background a img{
         display: none;
@@ -586,8 +614,8 @@ footer li:first-child{
         border: none;
     }
     .button-menu-nav i{
+        color: white;
         font-size: 30px;
-        width: 60px;
     } 
     .sidebar-mobile{
         display: flex;
@@ -604,27 +632,33 @@ footer li:first-child{
         position: absolute;
     }
     .mobile-sidebars{
-        display: none;
+        display: block;
         position: absolute;
         height: 400px;
         background-color: #131323;
         z-index: 2;
         width: 200px;
         opacity: 0.9;
+        left: -300px;
+    }
+    .active{
+        display:block;
+        
     }
     .mobile-sidebars li{
         height: 30px;
         border-bottom: 1px solid #969696;
-        text-align: center;
+        padding-left: 5px;
         line-height: 30px;
     }
-    .mobile-nav ul li:hover a{
-        color: blue;
-    }
+
     .mobile-login{
         display: none;
         position: absolute;
         right: 0;
+    }
+    .active{
+        display: block;
     }
     .button-header-mobile{
         display: block;
@@ -648,6 +682,122 @@ footer li:first-child{
         margin-top: 5%;
     }
     footer nav ul{
-        width: 85%;
+        width: 95%;
+        font-size: 13px;
+    }
+    .title-carousel {
+        font-size: 28px;
+    }
+    .content-carousel{
+        font-size: 13px;
+    }
+    .the-smarter-way__content {
+        font-size: 13px;
+    }
+    .the-smarter-way__tittle{
+        font-size: 27px;
+    }
+    .explore-topic__title{
+        font-size: 27px;
+    }
+    .explore-mentors__title{
+        font-size: 27px;
+    }
+    .background-mobile{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #FE5030;
+        position: fixed;
+        z-index: 5;
+        opacity: 0.12;
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .product-item{
+        padding: 57px 27px 104px 27px;
+        height: 775px;
+    }
+    .lets-get-learning{
+        padding: 2%;
+    }
+    .button-lets-get-learning button{
+        width: 120px;
+    }
+    .explore-topic_item{
+        height: 255px;
+    }
+    .explore-mentors_item{
+        height: 255px;
+    }
+    .explore-topic__content{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:480px){
+    .explore-topic_item{
+        height: 160px;
+    }
+    .explore-mentors_item{
+        height: 160px;
+    }
+    .front-button{
+        width: 20%;
+        right: 0px;
+    }
+    .footer{
+        display: block;
+        line-height: 30px;
+    }
+    .explore-topic {
+        height: 295px;
+    }
+    .explore-topic__content{
+        grid-row: 2 / 3;
+        line-height: 15px;
+    }
+    .explore-mentors {
+        height: 295px;
+    }
+    .explore-mentors__content{
+        grid-row: 2 / 3;
+        line-height: 15px;
+    }
+    .product-item{
+        height: 485px;
+    }
+    .title-carousel{
+        font-size: 21px;
+    }
+    .content-carousel{
+        font-size: 9px;
+    }
+    .the-smarter-way__content,.explore-mentors__content,.explore-topic__content {
+        font-size: 9px;
+    }
+    .the-smarter-way__tittle ,.explore-topic__title,.explore-mentors__title{
+        font-size: 21px;
+    }
+    .the-smarter-way{
+        height: 185px;
+    }
+    .lets-get-learning{
+        display: block;
+        text-align: center;
+        height: 95px;
+        line-height: 29px;
+    }
+    .content-lets-get-learning {
+        font-size: 18px;
+        width: 100%;
+    }
+    .button-lets-get-learning button {
+        width: 140px;
+        height: 45px;
+    }
+    footer {
+        height: 120px;
+        margin-top: 5%;
     }
 }
