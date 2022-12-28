@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-   
     <script src="./main/main.js"></script>
 </head>
 <body>
@@ -91,26 +89,35 @@
                 <div class="explore-topic__title">Explore Topics</div>
                 <div class="explore-topic__content">Take a look at some of the most popular areas our students are learning</div>
                 <div class="explore-topic_item filtering">
-                    <a href="#"><img src="./images/Group 8.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 9.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 10.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 11.png" alt=""></a>
+                   <img src="./images/Group 8.png" alt="">
+                    <img src="./images/Group 9.png" alt="">
+                    <img src="./images/Group 10.png" alt="">
+                    <img src="./images/Group 11.png" alt="">
+                    <img src="./images/Group 12.png" alt="">
+                    <img src="./images/Group 9.png" alt="">
+                    <img src="./images/Group 10.png" alt="">
+                    <img src="./images/Group 11.png" alt="">
                     <div class="front-button">
-                        <button onclick="clickTest()" style="width: 40px; height: 40px; border-radius: 50%;border-radius:50%;background-color: white;border: 1px solid rgb(214, 211, 211);box-shadow: 0px 10px rgb(214, 211, 211, 0.3)">
-                            <i style="font-size:28px;color: orangered;" class="fas fa-caret-right"></i></button>
+                        <button id="btnNext" onclick="nextPrev()" style="width: 40px; height: 40px; border-radius: 50%;border-radius:50%;background-color: white;border: 1px solid rgb(214, 211, 211);box-shadow: 0px 10px rgb(214, 211, 211, 0.3)">
+                            <i style="color: red;" class="fas fa-caret-right"></i></button>
                     </div>
                 </div>      
             </div>
             <div class="explore-mentors">
                 <div class="explore-mentors__title">Explore Mentors</div>
                 <div class="explore-mentors__content">Take a look at some of the most popular mentors currently offering their services</div>
-                <div class="explore-mentors_item">
-                    <a href="#"><img src="./images/Group 12.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 13.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 14.png" alt=""></a>
-                    <a href="#"><img src="./images/Group 15.png" alt=""></a>
+                <div class="explore-mentors_item filtering-two">
+                    <img src="./images/Group 12.png" alt="">
+                    <img src="./images/Group 13.png" alt="">
+                    <img src="./images/Group 14.png" alt="">
+                    <img src="./images/Group 15.png" alt="">
+                    <img src="./images/Group 12.png" alt="">
+                    <img src="./images/Group 13.png" alt="">
+                    <img src="./images/Group 14.png" alt="">
+                    <img src="./images/Group 15.png" alt="">
                     <div class="front-button">
-                        <a href="#"><img src="./images/front button.png" alt=""></a>
+                        <button id="btnNext" onclick="nextPrevTwo()" style="width: 40px; height: 40px; border-radius: 50%;border-radius:50%;background-color: white;border: 1px solid rgb(214, 211, 211);box-shadow: 0px 10px rgb(214, 211, 211, 0.3)">
+                            <i style="color: red;" class="fas fa-caret-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -121,9 +128,10 @@
                         Robert Thompson, Marketer
                     </div>
                     <div class="content-carousel">
-                        “I’m absolutely loving Mentor Box. It’s allowed me  to connect with a calibre of expert I’d rarely have the  opportunity to meet, and all from my own home.”
+                        <div>“I’m absolutely loving Mentor Box. It’s allowed me  to connect with a calibre of expert I’d
+                             rarely have the  opportunity to meet, and all from my own home.”</div>
                     </div>
-                    <div class="start-carousel">
+                    <div class="star-carousel">
                         <img src="./images/Star.png" alt="">
                         <img src="./images/Star.png" alt="">
                         <img src="./images/Star.png" alt="">
@@ -134,7 +142,8 @@
                             <a  href="#"><img class="js-filter" src="./images/back button.png" alt=""></a>
                     </div>
                     <div class="front-button-carousel">
-                            <a href="#"><img src="./images/front button.png" alt=""></a>
+                        <button id="btnNext" onclick="test()" style="width: 40px; height: 40px; border-radius: 50%;border-radius:50%;background-color: white;border: 1px solid rgb(214, 211, 211);box-shadow: 0px 10px rgb(214, 211, 211, 0.3)">
+                            <i style="color: red;" class="fas fa-caret-right"></i></button>
                     </div>
                    </div>
             </div>
@@ -160,6 +169,5 @@
             </nav>
         </footer>
     </div> 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>

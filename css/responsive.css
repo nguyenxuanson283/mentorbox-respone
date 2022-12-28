@@ -144,6 +144,7 @@ header{
     grid-template-rows: 18% 9% 1fr ;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
+    position: relative;
 }
 .explore-topic__title{
     grid-row:1 / 2;
@@ -163,13 +164,23 @@ header{
     grid-column: 1 / 6;
     grid-row: 4 / 5;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.explore-topic_item img{
+    width: calc(100% / 4);
+    object-fit: cover;
+    height: 340px;
+    margin-left: 10px;
 }
 .front-button{
     position: absolute;
     right: 0;
-    top:38%;
+    top:60%;
 }
 .explore-mentors{
     display:grid;
@@ -177,6 +188,7 @@ header{
     grid-template-rows: 18% 9% 1fr ;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
+    position: relative;
 }
 .explore-mentors__title{
     grid-row:1 / 2;
@@ -196,13 +208,23 @@ header{
     grid-column: 1 / 6;
     grid-row: 4 / 5;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.explore-mentors_item img{
+    width: calc(100% / 4);
+    object-fit: cover;
+    height: 340px;
+    margin-left: 10px;
 }
 .front-button{
     position: absolute;
     right: 0;
-    top:38%;
+    top:56%;
 }
 .carousel{
     background: url(../images/Rectangle\ 5.png);
@@ -230,7 +252,7 @@ header{
     font-size: 26px;
     grid-column: 3/11;
 }
-.start-carousel{
+.star-carousel{
     grid-row: 10 / 11;
     grid-column: 1 / 13;
     text-align: center;
