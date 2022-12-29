@@ -935,7 +935,6 @@ footer li:first-child{
     .the-smarter-way {
         height: 300px;
     }
-    
 }
 @media screen and (max-width:320px){
     .explore-mentors_item ~ button {
