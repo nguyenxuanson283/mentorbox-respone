@@ -1,4 +1,4 @@
-function handleClick(e){
+function handleClick(){
     const slide = document.getElementById('mobileSidebars');
 
     const background = document.getElementById('backGroundMobile');
@@ -23,4 +23,6 @@ function clickOutSide(){
     const background = document.getElementById('backGroundMobile');
     background.classList.toggle('active')
 }
+
+
 
