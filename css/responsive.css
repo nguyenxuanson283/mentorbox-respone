@@ -6,6 +6,9 @@
 ul li:hover a{
     color: #d3c6cc;
 }
+button{
+    border-radius: 10px;
+}
 button:hover{
     border: 1px solid #D72D77;
 }
@@ -932,9 +935,7 @@ footer li:first-child{
     .the-smarter-way {
         height: 300px;
     }
-    #carousel{
-        justify-content: flex-end;
-    }
+    
 }
 @media screen and (max-width:320px){
     .explore-mentors_item ~ button {
