@@ -24,29 +24,22 @@ function clickOutSide(){
     background.classList.toggle('active')
 }
 
-function nextPrev(){
-    var listImg = document.querySelector('.filtering')
-    var firstImg = listImg.querySelectorAll("img")[0]
-    var btnNext = document.getElementById('btnNext')
-    let firstImgWidth = firstImg.clientWidth + 10;
-    listImg.scrollLeft += firstImgWidth
-    if(listImg.scrollLeft > firstImgWidth * 4){
-        listImg.scrollLeft = 0;
-    }
-}
-function nextPrevTwo(){
-    var listImg = document.querySelector('.filtering-two')
-    var firstImg = listImg.querySelectorAll("img")[0]
-    var btnNext = document.getElementById('btnNext')
-    let firstImgWidth = firstImg.clientWidth;
-    listImg.scrollLeft += firstImgWidth + 20;
-    if(listImg.scrollLeft >= firstImgWidth * 4){
-        listImg.scrollLeft = 0;
-    }
-}
+// function nextPrev(){
+//     var listImg = document.querySelector('.filtering')
+//     var firstImg = listImg.querySelectorAll("img")[0]
+//     let firstImgWidth = firstImg.clientWidth + 20;
+//     listImg.scrollLeft += firstImgWidth
+//     if(listImg.scrollLeft > firstImgWidth * 2){
+//         listImg.scrollLeft = 0;
+//     }
+// }
 
-
-function test(){
-    var listStar = document.querySelector('.start-carousel');
-    var firstStart = listStar.querySelectorAll("img")[0]
-}
+// function nextPrevTwo(){
+//     var listImg = document.querySelector('.filtering-two')
+//     var firstImg = listImg.querySelectorAll("img")[0]
+//     let firstImgWidth = firstImg.clientWidth;
+//     listImg.scrollLeft += firstImgWidth + 10;
+//     if(listImg.scrollLeft >= firstImgWidth * 4){
+//         listImg.scrollLeft = 0;
+//     }
+// }

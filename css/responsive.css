@@ -25,7 +25,6 @@ header{
     background:url(../images/HeroSection.png);  
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.86;
 }
 .background{
     background: linear-gradient(146.88deg, rgba(255, 81, 47, 0.865885) -6.27%, rgba(221, 36, 118, 0.766559) 74.49%);
@@ -123,6 +122,7 @@ header{
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 }
+
 .the-smarter-way__tittle{
     font-size: 36px;
     font-weight: bold;
@@ -140,7 +140,7 @@ header{
 }
 .explore-topic{
     display:grid;
-    height: 452px;
+    height: 687px;
     grid-template-rows: 18% 9% 1fr ;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
@@ -172,10 +172,25 @@ header{
     scroll-behavior: smooth;
 }
 .explore-topic_item img{
-    width: calc(100% / 4);
+    width: 100%;
     object-fit: cover;
-    height: 340px;
     margin-left: 10px;
+}
+.explore-topic button{
+    margin-top: 350px;
+}
+[aria-label="Next"]{
+    background-color:white !important;
+    position: absolute;  
+    right: 0;
+    top: 80px;
+}
+[aria-label="Previous"]{ 
+    display: none;
+}
+.explore-topic_item ~ button div{
+    border-color: red !important;
+    left: 10px !important;
 }
 .front-button{
     position: absolute;
@@ -183,9 +198,9 @@ header{
     top:60%;
 }
 .explore-mentors{
-    display:grid;
-    height: 452px;
-    grid-template-rows: 18% 9% 1fr ;
+    display: grid;
+    height: 687px;
+    grid-template-rows: 18% 9% 1fr;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
     position: relative;
@@ -210,16 +225,27 @@ header{
     display: flex;
     white-space: nowrap;
     cursor: pointer;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 .explore-mentors_item img{
-    width: calc(100% / 4);
+    width: 100%;
     object-fit: cover;
-    height: 340px;
     margin-left: 10px;
+}
+.item{
+    width: calc(100% / 4) !important;
+}
+.explore-mentors_item ~ button{
+    position: absolute;
+    background-color:white !important;
+    top: 438px;
+}
+.explore-mentors_item ~ button div{
+    border-color: red !important;
+    left:10px !important
 }
 .front-button{
     position: absolute;
@@ -307,6 +333,20 @@ footer li:first-child{
     font-size: 28px;
 }
 .button-menu-nav{display: none;}
+@media screen and (max-width:1440px){
+    .explore-topic{
+        height: 490px;
+    }
+    .explore-topic button {
+        margin-top: 215px;
+    }
+    .explore-mentors{
+        height: 490px;
+    }
+    .explore-mentors_item ~ button {
+        top:300px
+    }
+}
 @media screen and (max-width:1366px) {
     .form-the-best__content{
         font-size: 23px;
@@ -316,7 +356,15 @@ footer li:first-child{
     }
     .explore-mentors_item img{
         width: 85%;
-    }    
+    }   
+    .explore-topic button{
+        margin-top: 245px;
+        margin-right: 12px;
+    } 
+    .explore-mentors_item ~ button {
+        margin-top: 32px;
+        margin-right: 12px;
+    }
 }
 @media screen and (max-width:1280px){
     .header{
@@ -424,6 +472,14 @@ footer li:first-child{
     }
     .background a img {
         width: 45%;
+    }
+    .explore-topic button{
+        margin-top: 77px;
+        margin-right: 3px;
+    }
+    .explore-mentors_item ~ button {
+        margin-top: -153px;
+        margin-right: 3px;
     }
 }
 @media screen and (max-width:768px){
@@ -557,6 +613,20 @@ footer li:first-child{
     }
     .explore-mentors_item{
         height: 264px;
+    }
+    .item{
+        flex-shrink: 0;
+        width: calc((100% - 0px) / 2) !important;
+        margin-left: 0px;
+        margin-right: 7.5px;
+    }
+    .explore-topic button{
+        margin-top: 192px;
+        right: 30px;
+    }
+    .explore-mentors_item ~ button{
+        right: 30px;
+        margin-top: -23px;
     }
 }
 @media screen and (max-width:680px) {
@@ -757,13 +827,7 @@ footer li:first-child{
         font-size: 13px;
     }
 }
-@media screen and (max-width:480px){
-    .explore-topic_item{
-        height: 160px;
-    }
-    .explore-mentors_item{
-        height: 160px;
-    }
+@media screen and (max-width:425px){
     .front-button{
         width: 20%;
         right: 0px;
@@ -787,7 +851,7 @@ footer li:first-child{
         line-height: 15px;
     }
     .product-item{
-        height: 485px;
+        height: 715px;
     }
     .title-carousel{
         font-size: 21px;
@@ -821,5 +885,49 @@ footer li:first-child{
     footer {
         height: 120px;
         margin-top: 5%;
+    }
+    .item{
+        width: calc((100% - 0px) / 1) !important;
+    }
+    .explore-topic button{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: 168px;
+        margin-right: 34px;
+    }
+    .explore-topic button div{
+        width: 8px !important;
+        height: 8px !important;
+        left: 2px !important;
+    }
+    .explore-mentors_item ~ button{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: -57px;
+        margin-right: 34px;
+    }
+    .explore-mentors_item ~ button div{
+        width: 8px !important;
+        height: 8px !important;
+        left: 2px !important;
+    }
+    .explore-topic, .explore-mentors {
+        height: 400px;
+    }
+}
+@media screen and (max-width:375px){
+    .explore-mentors_item ~ button {
+        margin-right: 20px;
+    }
+    .explore-topic_item ~ button {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    .explore-mentors_item ~ button {
+        margin-right: 10px;
+    }
+    .explore-topic_item ~ button {
+        margin-right: 10px;
     }
 }
