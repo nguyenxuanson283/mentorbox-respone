@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins";
 }
 ul li:hover a{
     color: #d3c6cc;
@@ -403,7 +403,7 @@ footer li:first-child{
         font-size: 12px;
     }
     .button-header{
-        grid-column: 7 / 9;
+        grid-column: 8 / 9;
     }
     .form-the-best__button button{
         width: 105px;
