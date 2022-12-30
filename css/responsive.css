@@ -729,11 +729,12 @@ footer li:first-child{
         display: block;
         position: absolute;
         height: 400px;
-        background-color: #131323;
+        background: linear-gradient(146.88deg, rgba(255, 81, 47, 0.865885) -6.27%, rgba(221, 36, 118, 0.766559) 74.49%);
         z-index: 2;
         width: 200px;
-        opacity: 0.9;
+        opacity: 0.76;
         left: -300px;
+        top: -5px;
     }
     .active{
         display:block;
