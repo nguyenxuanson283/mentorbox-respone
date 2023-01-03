@@ -3,6 +3,9 @@
     padding: 0;
     font-family: "Poppins";
 }
+body{
+    background: #F2F2F2;
+}
 ul li:hover a{
     color: #d3c6cc;
 }
@@ -50,26 +53,29 @@ header{
     justify-content: space-between;
     height: 55px;
     line-height: 55px;
-    grid-template-columns: repeat(8 , 1fr);
+    grid-template-columns: repeat(10 , 1fr);
 }
 .header nav h2{
     text-transform: uppercase;
     font-size: 28px;
 }
 .mentorbox{
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     justify-content: space-between;
 }
 .mentorbox li a{
     font-size: 18px;
 }
 .button-header{
-    grid-column:  8 / 9;
+    grid-column:  10 / 11;
     justify-content: space-between;
+}
+.button-header li{
+    margin-right: 20px;
 }
 .button-header button{
     width: 130px;
-    height: 100%;
+    height: 55px;
     background-color: #FFFE00;
     border-radius: 10px;
 }
@@ -94,10 +100,12 @@ header{
     font-size: 24px;
     color: white;
     opacity: 0.86;
+    margin-top: 10px;
 }
 .form-the-best__button{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    margin-top: 32px;
 }
 .form-the-best__button button{
     width: 205px;
@@ -106,37 +114,34 @@ header{
 .form-the-best__button button:first-child{
     background-color: #FFFE00;
 }
-.background a img{
+.background img{
     position: absolute;
     max-width: 100%;
     right: 0;
     top:20%;
 }
 .the-smarter-way{
-    display: grid;
+    display: flex;
     height: 380px;
-    grid-template-rows: 24% 1fr 28% ;
-    grid-template-columns: 15.4% 1fr 15.4%;
-}
-.content-the-smarter-way{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
+    background-color: #FFF;
+    margin-top: 90px;
 }
-
 .the-smarter-way__tittle{
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    max-width: 894px;
+    margin: auto;
 }
 .the-smarter-way__content{
     font-size: 18px;
-    text-align: center;
     color: #969696;
     grid-row: 2 / 4;
     line-height: 33px;
+    max-width: 996px;
+    text-align: center;
 }
 .product-item{
     padding: 57px 27px 104px 60px;
@@ -154,6 +159,7 @@ header{
     grid-column: 1 / 6;
     font-size: 36px;
     text-align: center;
+    font-weight: bold;
 }
 .explore-topic__content{
     font-size: 18px;
@@ -213,6 +219,7 @@ header{
     grid-column: 1 / 6;
     font-size: 36px;
     text-align: center;
+    font-weight: bold;
 }
 .explore-mentors__content{
     font-size: 18px;
@@ -397,6 +404,23 @@ footer li:first-child{
     .explore-mentors{
         height: 330px;
     }
+    .form-the-best{
+        height: 183px;
+    }
+    .form-the-best__title{
+        font-size: 50px;
+    }
+    .form-the-best__content{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1100px){
+    .header nav{
+        grid-column: 1/9;
+    }
+    .mentorbox{
+        grid-column: 1 / 8;
+    }
 }
 @media screen and (max-width:1024px){
     .background{
@@ -406,7 +430,7 @@ footer li:first-child{
         font-size: 12px;
     }
     .button-header{
-        grid-column: 8 / 9;
+        grid-column: 9 / 11;
     }
     .form-the-best__button button{
         width: 105px;
@@ -473,8 +497,8 @@ footer li:first-child{
     footer nav ul{
         width: 80%;
     }
-    .background a img {
-        width: 45%;
+    .background img {
+        width: 38%;
     }
     .explore-topic button{
         margin-top: 77px;
@@ -483,6 +507,26 @@ footer li:first-child{
     .explore-mentors_item ~ button {
         margin-top: -153px;
         margin-right: 3px;
+    }
+}
+@media screen and (max-width:970px){
+    .button-header button{
+        width: 90px;
+        height: 40px;
+    }
+    .form-the-best{
+        height: 183px;
+    }
+    .background img {
+        width: 40%;
+    }
+}
+@media screen and (max-width:875px){
+    .background img {
+        width: 45%;
+    }
+    .form-the-best__content{
+        font-size: 17px;
     }
 }
 @media screen and (max-width:768px){
@@ -503,12 +547,12 @@ footer li:first-child{
         width: calc(100% / 2);
     }
     .mentorbox{
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
     }
     .mentorbox li a {
         font-size: 12px;
     }
-    .background a img{
+    .background img{
         display: none;
     }
     .button-header li a{
@@ -518,8 +562,8 @@ footer li:first-child{
         justify-content: space-between;
     }
     .button-header li button{
-        width: 55px;
-        height: 29px;
+        width: 90px;
+        height: 40px;
     }
     .form-the-best__title{
         font-size:35px
@@ -666,7 +710,7 @@ footer li:first-child{
     .front-button{
         right: 0px;
     }
-    .background a img{
+    .background img{
         display: none;
     }
     .form-the-best__title{
@@ -844,7 +888,13 @@ footer li:first-child{
     .the-smarter-way__content, .explore-topic__content, .explore-mentors__content{
         font-size: 15px;
     }
- 
+    footer {
+        height: 120px;
+        margin-top: 5%;
+    }
+    footer nav ul{
+        display: block;
+    }
 }
 @media screen and (max-width:425px){
     .front-button{
