@@ -143,6 +143,7 @@ header{
     max-width: 996px;
     text-align: center;
     font-weight: 500;
+    opacity: 0.6;
 }
 .product-item{
     padding: 57px 27px 104px 60px;
@@ -169,7 +170,8 @@ header{
     text-align: center;
     font-weight: 500;
     margin-bottom:50px;
-    margin-top:20px
+    margin-top:20px;
+    opacity: 0.6;
 }
 .explore-topic_item{
     grid-column: 1 / 6;
@@ -183,12 +185,13 @@ header{
     scroll-behavior: smooth;
 }
 .explore-topic_item img{
-    width: 100%;
+    width: 295px;
+    height: 295px;
     object-fit: cover;
     margin-left: 10px;
 }
 .explore-topic button{
-    margin-top: 260px;
+    margin-top: 200px;
 }
 [aria-label="Next"]{
     background-color:white !important;
@@ -220,6 +223,7 @@ header{
     font-size: 36px;
     text-align: center;
     font-weight: bold;
+    opacity: 0.6;
 }
 .explore-mentors__content{
     font-size: 18px;
@@ -241,17 +245,18 @@ header{
     scroll-behavior: smooth;
 }
 .explore-mentors_item img{
-    width: 100%;
+    width: 295px;
+    height: 295px;
     object-fit: cover;
     margin-left: 10px;
 }
 .item{
-    width: calc((100% -10px) / 4) !important;
+    width: calc((100% - 380px) / 4) !important;
 }
 .explore-mentors_item ~ button{
     position: absolute;
     background-color:white !important;
-    top: 360px;
+    top: 280px;
 }
 .explore-mentors_item ~ button div{
     border-color: red !important;
@@ -358,35 +363,26 @@ footer li:first-child{
     .explore-mentors_item ~ button {
         top:300px
     }
+    .item {
+        width: calc(100% / 4) !important;
+    }
 }
 @media screen and (max-width:1366px) {
     .form-the-best__content{
         font-size: 23px;
-    }
-    .explore-topic_item img{
-        width: 85%;
-    }
-    .explore-mentors_item img{
-        width: 85%;
     }   
     .explore-topic button{
-        margin-top: 245px;
-        margin-right: 12px;
+        margin-top: 211px;
+        margin-right: -18px;
     } 
     .explore-mentors_item ~ button {
         margin-top: 32px;
-        margin-right: 12px;
+        margin-right: -18px;
     }
 }
 @media screen and (max-width:1280px){
     .header{
         width: 100%;
-    }
-    .explore-topic_item img{
-        width: 85%;
-    }
-    .explore-mentors_item img{
-        width: 85%;
     }
     .form-the-best__content{
         font-size: 19px;
@@ -405,6 +401,11 @@ footer li:first-child{
     }
     .explore-mentors{
         height: 330px;
+        margin-top: 192px;
+        margin-bottom: 120px;
+    }
+    .explore-mentors_item ~ button{
+        margin-top: -12px;
     }
     .form-the-best{
         height: 183px;
@@ -415,6 +416,15 @@ footer li:first-child{
     .form-the-best__content{
         font-size: 18px;
     }
+    .item{
+        width: calc(100% / 3) !important;
+    }
+    .explore-mentors_item ~ button{
+        margin-right: 40px;
+    }
+    .explore-topic button {
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width:1100px){
     .header nav{
@@ -422,6 +432,12 @@ footer li:first-child{
     }
     .mentorbox{
         grid-column: 1 / 8;
+    }
+    .explore-mentors_item ~ button{
+        margin-right: -21px;
+    }
+    .explore-topic button {
+        margin-right: -21px;
     }
 }
 @media screen and (max-width:1024px){
@@ -476,7 +492,7 @@ footer li:first-child{
         padding: 10px 27px 30px 60px;
     }
     .explore-topic{
-        height: 281px;
+        height: 381px;
     }
     .explore-mentors{
         height: 281px;
@@ -502,12 +518,15 @@ footer li:first-child{
     .background img {
         width: 38%;
     }
+    .explore-mentors{
+        height: 400px;
+    }
     .explore-topic button{
-        margin-top: 77px;
+        margin-top: 181px;
         margin-right: 3px;
     }
     .explore-mentors_item ~ button {
-        margin-top: -153px;
+        margin-top: -35px;
         margin-right: 3px;
     }
 }
@@ -529,6 +548,9 @@ footer li:first-child{
     }
     .form-the-best__content{
         font-size: 17px;
+    }
+    .item{
+        width: calc(100% / 2) !important;
     }
 }
 @media screen and (max-width:768px){
@@ -885,10 +907,11 @@ footer li:first-child{
 }
 @media screen and (max-width:475px) {
     .the-smarter-way__tittle, .explore-topic__title , .explore-mentors__title{
-        font-size: 20px;
+        font-size: 19px;
+        margin-bottom: 20px;
     }
     .the-smarter-way__content, .explore-topic__content, .explore-mentors__content{
-        font-size: 15px;
+        font-size: 10px;
     }
     footer {
         height: 120px;
@@ -896,6 +919,43 @@ footer li:first-child{
     }
     footer nav ul{
         display: block;
+    }
+    .item{
+        width: 100% !important;
+    }
+    .explore-mentors{
+        height: 300px;
+        margin-bottom:50px;
+    }
+    .product-item {
+        height: 866px;
+    }
+    .explore-topic{
+        height: 290px;
+    }
+    .explore-topic_item img{
+        width: 265px;
+         height: 265px;
+    }
+    .explore-mentors_item img{
+        width: 265px;
+        height: 265px;
+    }
+    .explore-topic button {
+        right: 50px
+    }
+    .explore-mentors_item ~ button{
+        right: 50px;
+    }
+    .content-carousel{
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .button-lets-get-learning button{
+        font-size: 11px;
+    }
+    .content-lets-get-learning {
+        font-size: 17px;
     }
 }
 @media screen and (max-width:425px){
@@ -914,15 +974,16 @@ footer li:first-child{
         grid-row: 2 / 3;
         line-height: 15px;
     }
+    .product-item {
+        height: 750px;
+    }
     .explore-mentors {
         height: 295px;
+        margin-top:125px
     }
     .explore-mentors__content{
         grid-row: 2 / 3;
         line-height: 15px;
-    }
-    .product-item{
-        height: 715px;
     }
     .title-carousel{
         font-size: 21px;
@@ -930,11 +991,8 @@ footer li:first-child{
     .content-carousel{
         font-size: 9px;
     }
-    .the-smarter-way__content,.explore-mentors__content,.explore-topic__content {
-        font-size: 15px;
-    }
     .the-smarter-way__tittle ,.explore-topic__title,.explore-mentors__title{
-        font-size: 21px;
+        font-size: 17px;
     }
     .the-smarter-way{
         height: 185px;
@@ -967,15 +1025,15 @@ footer li:first-child{
     .explore-mentors_item ~ button{
         margin-top: -57px;
         margin-right: 48px;
+    } 
+    .explore-topic button{
+        right: -17px;
     }
-    .explore-topic, .explore-mentors {
-        height: 400px;
+    .explore-mentors_item ~ button{
+        right: -17px;
     }
-    .explore-topic_item img{
-        width: 70%;
-    }
-    .explore-mentors_item img {
-        width: 70%;
+    .content-carousel{
+        font-size: 11px;
     }
 }
 @media screen and (max-width:375px){
