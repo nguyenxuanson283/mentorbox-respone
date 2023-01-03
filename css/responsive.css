@@ -143,7 +143,7 @@ header{
     max-width: 996px;
     text-align: center;
     font-weight: 500;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .product-item{
     padding: 57px 27px 104px 60px;
@@ -171,7 +171,7 @@ header{
     font-weight: 500;
     margin-bottom:50px;
     margin-top:20px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .explore-topic_item{
     grid-column: 1 / 6;
@@ -231,7 +231,7 @@ header{
     margin-bottom: 50px;
     text-align: center;
     font-weight: 500;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .explore-mentors_item{
     grid-column: 1 / 6;
@@ -911,7 +911,7 @@ footer li:first-child{
         margin-bottom: 20px;
     }
     .the-smarter-way__content, .explore-topic__content, .explore-mentors__content{
-        font-size: 10px;
+        font-size: 12px;
     }
     footer {
         height: 120px;
@@ -952,7 +952,7 @@ footer li:first-child{
         font-weight: 500;
     }
     .button-lets-get-learning button{
-        font-size: 11px;
+        font-size: 12px;
     }
     .content-lets-get-learning {
         font-size: 17px;
@@ -1033,7 +1033,7 @@ footer li:first-child{
         right: -17px;
     }
     .content-carousel{
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width:375px){
