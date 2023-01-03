@@ -142,6 +142,7 @@ header{
     line-height: 33px;
     max-width: 996px;
     text-align: center;
+    font-weight: 500;
 }
 .product-item{
     padding: 57px 27px 104px 60px;
