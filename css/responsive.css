@@ -28,7 +28,7 @@ ul li a{
     color: white;
 }
 header{
-    background:url(../images/HeroSection.png);  
+    background:url(../images/HeroSection.AVIF);  
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -263,7 +263,7 @@ header{
     top:56%;
 }
 .carousel{
-    background: url(../images/Rectangle\ 5.png);
+    background: url(../images/Rectangle\ 5.AVIF);
     background-repeat: no-repeat;
     background-size: cover;
 }
