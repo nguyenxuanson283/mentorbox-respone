@@ -2,7 +2,6 @@
     margin:0;
     padding: 0;
     font-family: "Poppins";
-    color: black;
 }
 body{
     background: #F2F2F2;
@@ -102,6 +101,7 @@ header{
     color: white;
     opacity: 0.86;
     margin-top: 10px;
+    font-weight: 500;
 }
 .form-the-best__button{
     grid-row: 3 / 4;
@@ -138,7 +138,6 @@ header{
 }
 .the-smarter-way__content{
     font-size: 18px;
-    color: #969696;
     grid-row: 2 / 4;
     line-height: 33px;
     max-width: 996px;
@@ -149,7 +148,6 @@ header{
     padding: 57px 27px 104px 60px;
 }
 .explore-topic{
-    display:grid;
     height: 687px;
     grid-template-rows: 18% 9% 1fr ;
     grid-template-columns: repeat(5,1fr);
@@ -165,12 +163,13 @@ header{
 }
 .explore-topic__content{
     font-size: 18px;
-    color: #969696;
     line-height: 33px;
     grid-row:2 / 3;
     grid-column: 2/5;
     text-align: center;
     font-weight: 500;
+    margin-bottom:50px;
+    margin-top:20px
 }
 .explore-topic_item{
     grid-column: 1 / 6;
@@ -189,7 +188,7 @@ header{
     margin-left: 10px;
 }
 .explore-topic button{
-    margin-top: 350px;
+    margin-top: 260px;
 }
 [aria-label="Next"]{
     background-color:white !important;
@@ -210,7 +209,7 @@ header{
     top:60%;
 }
 .explore-mentors{
-    display: grid;
+    margin-top: 50px;
     height: 687px;
     grid-template-rows: 18% 9% 1fr;
     grid-template-columns: repeat(5,1fr);
@@ -218,18 +217,15 @@ header{
     position: relative;
 }
 .explore-mentors__title{
-    grid-row:1 / 2;
-    grid-column: 1 / 6;
     font-size: 36px;
     text-align: center;
     font-weight: bold;
 }
 .explore-mentors__content{
     font-size: 18px;
-    color: #969696;
     line-height: 33px;
-    grid-row:2 / 3;
-    grid-column: 1/6;
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
     font-weight: 500;
 }
@@ -250,12 +246,12 @@ header{
     margin-left: 10px;
 }
 .item{
-    width: calc(100% / 4) !important;
+    width: calc((100% -10px) / 4) !important;
 }
 .explore-mentors_item ~ button{
     position: absolute;
     background-color:white !important;
-    top: 438px;
+    top: 360px;
 }
 .explore-mentors_item ~ button div{
     border-color: red !important;
@@ -291,6 +287,8 @@ header{
     grid-row: 6 / 8;
     font-size: 26px;
     grid-column: 3/11;
+    font-weight: 700;
+    z-index: 2;
 }
 .star-carousel{
     grid-row: 10 / 11;
