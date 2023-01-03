@@ -223,7 +223,6 @@ header{
     font-size: 36px;
     text-align: center;
     font-weight: bold;
-    opacity: 0.3;
 }
 .explore-mentors__content{
     font-size: 18px;
@@ -232,6 +231,7 @@ header{
     margin-bottom: 50px;
     text-align: center;
     font-weight: 500;
+    opacity: 0.3;
 }
 .explore-mentors_item{
     grid-column: 1 / 6;
