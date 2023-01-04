@@ -31,6 +31,10 @@ header{
     background:url(../images/HeroSection.AVIF);  
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 780px;
 }
 .background{
     background: linear-gradient(146.88deg, rgba(255, 81, 47, 0.865885) -6.27%, rgba(221, 36, 118, 0.766559) 74.49%);
@@ -143,7 +147,7 @@ header{
     max-width: 996px;
     text-align: center;
     font-weight: 500;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .product-item{
     padding: 57px 27px 104px 60px;
@@ -171,7 +175,7 @@ header{
     font-weight: 500;
     margin-bottom:50px;
     margin-top:20px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .explore-topic_item{
     grid-column: 1 / 6;
@@ -203,8 +207,16 @@ header{
     display: none;
 }
 .explore-topic_item ~ button div{
-    border-color: red !important;
+    border-style:none !important;
+    width: 0 !important;
+    height: 0 !important;
     left: 10px !important;
+    border-bottom: 10px solid transparent !important;
+    border-top: 10px solid transparent !important;
+    border-left: 10px solid #F00 !important;
+    transform: unset !important;
+    left: 16px !important;
+    opacity: 0.76;
 }
 .front-button{
     position: absolute;
@@ -212,7 +224,6 @@ header{
     top:60%;
 }
 .explore-mentors{
-    margin-top: 50px;
     height: 687px;
     grid-template-rows: 18% 9% 1fr;
     grid-template-columns: repeat(5,1fr);
@@ -231,7 +242,7 @@ header{
     margin-bottom: 50px;
     text-align: center;
     font-weight: 500;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .explore-mentors_item{
     grid-column: 1 / 6;
@@ -259,8 +270,16 @@ header{
     top: 280px;
 }
 .explore-mentors_item ~ button div{
-    border-color: red !important;
-    left:10px !important
+       border-style:none !important;
+    width: 0 !important;
+    height: 0 !important;
+    left: 10px !important;
+    border-bottom: 10px solid transparent !important;
+    border-top: 10px solid transparent !important;
+    border-left: 10px solid #F00 !important;
+    transform: unset !important;
+    left: 16px !important;
+    opacity: 0.76;
 }
 .front-button{
     position: absolute;
@@ -274,7 +293,7 @@ header{
 }
 .background-carousel{
     background: linear-gradient(180deg, #131323 0%, rgba(87, 1, 1, 0.721977) 100%);
-    opacity: 0.56;
+    opacity: 0.76;
     color: white;
     display: grid;
     grid-template-rows: 14% repeat(9,1fr) 11.3%;
@@ -376,7 +395,7 @@ footer li:first-child{
         margin-right: -18px;
     } 
     .explore-mentors_item ~ button {
-        margin-top: 32px;
+        margin-top: -15px;
         margin-right: -18px;
     }
 }
@@ -441,6 +460,9 @@ footer li:first-child{
     }
 }
 @media screen and (max-width:1024px){
+    header{
+        height: 600px;
+    }
     .background{
         height: 557px;
     }
@@ -531,6 +553,9 @@ footer li:first-child{
     }
 }
 @media screen and (max-width:970px){
+    header{
+        height: 600px;
+    }
     .button-header button{
         width: 90px;
         height: 40px;
@@ -543,6 +568,9 @@ footer li:first-child{
     }
 }
 @media screen and (max-width:875px){
+    header{
+        height: 600px;
+    }
     .background img {
         width: 45%;
     }
@@ -554,6 +582,9 @@ footer li:first-child{
     }
 }
 @media screen and (max-width:768px){
+    header{
+        height: 402px;
+    }
     .explore-mentors_item{
         flex-wrap: wrap;
         overflow: hidden;
@@ -681,6 +712,7 @@ footer li:first-child{
     }
     .explore-mentors{
         height: 471px;
+        margin-top: 0;
     }
     .explore-mentors_item{
         height: 264px;
@@ -701,6 +733,9 @@ footer li:first-child{
     }
 }
 @media screen and (max-width:680px) {
+    header{
+        height: 360px;
+    }
     .explore-topic_item{
         flex-wrap: wrap;
         overflow: hidden;
@@ -724,6 +759,7 @@ footer li:first-child{
     }
     .explore-mentors{
         height: 440px;
+        margin-top:0
     }
     .explore-mentors_item a{
         width: 100%;
@@ -740,6 +776,7 @@ footer li:first-child{
     .form-the-best__title{
         font-size: 25px;
         text-align: center;
+        font-weight: 600;
     }
     .form-the-best__content{
         font-size: 15px;
@@ -865,13 +902,14 @@ footer li:first-child{
         font-size: 13px;
     }
     .the-smarter-way__tittle{
-        font-size: 27px;
+        font-size: 25px;
+        font-weight: bold;
     }
     .explore-topic__title{
-        font-size: 27px;
+        font-size: 25px;
     }
     .explore-mentors__title{
-        font-size: 27px;
+        font-size: 25px;
     }
     .background-mobile{
         width: 100%;
@@ -931,7 +969,7 @@ footer li:first-child{
         height: 866px;
     }
     .explore-topic{
-        height: 290px;
+        height: 500px;
     }
     .explore-topic_item img{
         width: 265px;
