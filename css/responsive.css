@@ -50,6 +50,7 @@ header{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3, 1fr);
+    height: 780px;
 }
 .header nav {
     grid-column: 1 / 7;
@@ -256,15 +257,16 @@ header{
     overflow: hidden;
     scroll-behavior: smooth;
 }
+.item{
+    width: calc((100% - 420px ) / 4) !important;
+}
 .explore-mentors_item img{
     width: 295px;
     height: 295px;
     object-fit: cover;
     margin-left: 10px;
 }
-.item{
-    width: calc((100% - 420px ) / 4) !important;
-}
+
 .explore-mentors_item ~ button{
     position: absolute;
     background-color:white !important;
@@ -315,6 +317,9 @@ header{
     grid-column: 3/11;
     font-weight: 700;
     z-index: 2;
+}
+.content-carousel .item {
+    width: 100% !important;
 }
 .star-carousel{
     grid-row: 10 / 11;
@@ -845,7 +850,6 @@ footer li:first-child{
     .mobile-sidebars{
         display: block;
         position: absolute;
-        height: 400px;
         background: linear-gradient(146.88deg, rgba(255, 81, 47, 0.865885) -6.27%, rgba(221, 36, 118, 0.766559) 74.49%);
         z-index: 2;
         width: 200px;
@@ -867,9 +871,15 @@ footer li:first-child{
     .mobile-sidebars li:last-child{
         border: none;
     }
-    .mobile-sidebars li img{
-        margin: auto;
+    .mobile-login{
         display: block;
+        position: absolute;
+        background: linear-gradient(146.88deg, rgba(255, 81, 47, 0.865885) -6.27%, rgba(221, 36, 118, 0.766559) 74.49%);
+        z-index: 2;
+        width: 200px;
+        opacity: 0.76;
+        left: -300px;
+        top: -5px;
     }
     .mobile-login{
         display: none;
