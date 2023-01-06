@@ -116,8 +116,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <div class="background-carousel">
+            <div class="carousel" id="carouselSlider">
+                <div class="background-carousel item" >
                     <div class="title-carousel">
                         Robert Thompson, Marketer
                     </div>
@@ -132,13 +132,22 @@
                         <img src="./images/Star.AVIF" alt="">
                         <img src="./images/Star.AVIF" alt="">
                     </div>
-                    <div class="back-button-carousel">
-                        <button>
-                            <div>Back</div>
-                        </button>
+                </div>
+                <div class="background-carousel item" >
+                    <div class="title-carousel">
+                        Thủ đô của Ukraine bị tập kích
                     </div>
-                    <div class="front-button-carousel">
-                       <button>Next</button>
+                    <div class="content-carousel">
+                        <div>“Guardian dẫn lời Thị trưởng Kiev Vitali Klitschko cho hay, rạng sáng nay 14/12,
+                             còi báo động ở thủ đô Kiev và các khu vực lân cận đồng loạt vang lên,
+                             khoảng 20 phút trước khi xuất hiện những tiếng nổ lớn.”</div>
+                    </div>
+                    <div class="star-carousel">
+                        <img src="./images/Star.AVIF" alt="">
+                        <img src="./images/Star.AVIF" alt="">
+                        <img src="./images/Star.AVIF" alt="">
+                        <img src="./images/Star.AVIF" alt="">
+                        <img src="./images/Star.AVIF" alt="">
                     </div>
                 </div>
             </div>
@@ -190,8 +199,62 @@
     },
     {
       breakpoint: 768,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll:1,
+      gap: 20,
+    },
+    {
+      breakpoint: 960,
+      slidesToShow: 1,
+      slidesToScroll:4,
+      gap: 20,
+    },
+    {
+      breakpoint: 1024,
+      slidesToShow: 1,
+      slidesToScroll:4,
+      gap: 20,
+    },
+    {
+      breakpoint: 1440,
+      slidesToShow: 1,
+      slidesToScroll:4,
+      gap: 30,
+    },
+    {
+      breakpoint: 1920,
+      slidesToShow: 1,
+      slidesToScroll:4,
+      gap: 30,
+    },
+  ],
+  showScrollbar:false
+});
+ScrollCarousel({
+  carouselSelector: "#sliderShow",
+  responsive: [
+  {
+      breakpoint: 320,
+      slidesToShow: 1,
+      slidesToScroll:1,
+      gap: 20,
+    },
+  {
+      breakpoint: 375,
+      slidesToShow: 1,
+      slidesToScroll:1,
+      gap: 20,
+    },
+     {
+      breakpoint: 425,
+      slidesToShow: 1,
+      slidesToScroll:1,
+      gap: 0,
+    },
+    {
+      breakpoint: 768,
+      slidesToShow: 1.5,
+      slidesToScroll:4,
       gap: 20,
     },
     {
@@ -222,7 +285,7 @@
   showScrollbar:false
 });
 ScrollCarousel({
-  carouselSelector: "#sliderShow",
+  carouselSelector: "#carouselSlider",
   responsive: [
   {
       breakpoint: 320,

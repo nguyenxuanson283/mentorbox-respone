@@ -151,7 +151,7 @@ header{
     opacity: 0.7;
 }
 .product-item{
-    padding: 57px 27px 104px 60px;
+    padding: 57px 27px 0px 60px;
 }
 .explore-topic{
     height: 687px;
@@ -274,7 +274,7 @@ header{
     right: 24px;
 }
 .explore-mentors_item ~ button div{
-       border-style:none !important;
+    border-style:none !important;
     width: 0 !important;
     height: 0 !important;
     left: 10px !important;
@@ -354,6 +354,41 @@ header{
     background-color: #FFFE00;
     border-radius: 10px;
 }
+.carousel .item{
+    width: 100% !important;
+}
+.background-carousel{
+    position: relative;
+}
+.carousel ~ button{
+    display: block !important;
+    position: absolute;
+    top:2900px !important;
+}
+.carousel ~ button + button div{
+    border-style:none !important;
+    width: 0 !important;
+    height: 0 !important;
+    left: 10px !important;
+    border-bottom: 10px solid transparent !important;
+    border-top: 10px solid transparent !important;
+    border-left: 10px solid #F00 !important;
+    transform: unset !important;
+    left: 16px !important;
+    opacity: 0.76;
+}
+.carousel ~ button div{
+    border-style:none !important;
+    width: 0 !important;
+    height: 0 !important;
+    left: 10px !important;
+    border-bottom: 10px solid transparent !important;
+    border-top: 10px solid transparent !important;
+    border-right: 10px solid #F00 !important;
+    transform: unset !important;
+    left: 13px !important;
+    opacity: 0.76;
+}
 footer{
     height: 197px;
     display: grid;
@@ -391,6 +426,14 @@ footer li:first-child{
     }
     .item {
         width: calc((100% - 50px) / 4) !important;
+    }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:2612px !important;
+    }
+    .product-item{
+        padding: 57px 27px 104px 60px;
     }
 }
 @media screen and (max-width:1366px) {
@@ -564,6 +607,11 @@ footer li:first-child{
     .explore-mentors_item ~ button {
         margin-top: -35px;
         margin-right: 3px;
+    }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:2350px !important;
     }
 }
 @media screen and (max-width:970px){
@@ -747,6 +795,11 @@ footer li:first-child{
     .explore-mentors_item ~ button{
         right: -15px;
         margin-top: -23px;
+    }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:1750px !important;
     }
 }
 @media screen and (max-width:680px) {
@@ -964,6 +1017,15 @@ footer li:first-child{
     .explore-topic__content{
         font-size: 13px;
     }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:1700px !important;
+    }
+    .star-carousel img{
+        width: 12px;
+        height: 12px;
+    }
 }
 @media screen and (max-width:475px) {
     header{
@@ -1031,6 +1093,11 @@ footer li:first-child{
     .star-carousel img{
         width: 12px;
         height: 12px;
+    }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:1550px !important;
     }
 }
 @media screen and (max-width:425px){
@@ -1120,6 +1187,11 @@ footer li:first-child{
     }
     .the-smarter-way {
         height: 300px;
+    }
+    .carousel ~ button{
+        display: block !important;
+        position: absolute;
+        top:1650px !important;
     }
 }
 @media screen and (max-width:320px){
